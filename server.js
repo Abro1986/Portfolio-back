@@ -34,7 +34,7 @@ app.post('/api/mail', function(req,res) {
 
 	sgMail.send(msgTwo).then(() => {
 		console.log('promise resolution')
-		res.send('Thank You')
+		res.send('Thank You, your email has been sent')
 	})
 	.catch((err) => {
 		console.log(err)
